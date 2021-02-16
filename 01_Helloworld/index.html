@@ -1,0 +1,26 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--or <script src="vue.js"></script> vue.js를 같이 보낸다. -->
+</head>
+<body>
+    <div id="counter">
+        Counter: {{ counter }} <br>
+        Hi: {{ aaa }} <br>
+        Nice: {{ bv }} <br>
+
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds to see my dynamically bound
+            title!
+          </span>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
