@@ -1,19 +1,17 @@
-const Counter = {
+const app = {
     data() {
       return {
-        counter: 3,
-        aaa: 2,
-        bv: false,
-
-        message: 'You loaded this page on ' + new Date().toLocaleString()
+        message: "Hello World",
+        counter: 0
       }
     },
 
     mounted() {
       setInterval(() => {
-        this.counter++
+        this.$data.counter++
       }, 1000)
-    }
+    },
+
   }
-  
-  Vue.createApp(Counter).mount('#counter')
+
+Vue.createApp(app).mount("#myapp");
